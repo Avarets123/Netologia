@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+.material-icons {
+    display: inline-block;
+    margin-top: 80px;
+    font-size: 48px;
+}
+
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+
+.card {
+    position: relative;
+    width: 350px;
+    margin-top: 20px;
+
+}
+
+.card-list {
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+
+
+.card-button {
+    font-size: 15px;
+    width: 120px;
+    top: 85%;
+    left: 60%;
+    border-radius: 40px;
+}
+
+
+.card-button-list {
+    font-size: 15px;
+    width: 150px;
+    border-radius: 40px;
+}
+
+.card-color, .card-price, .card-button, .card-header {
+    position: absolute;
+}
+
+.card-price {
+    top: 85%;
+    left: 15%;
+    color: red;
+    font-size: 20px;
+}
+
+.card-price-list {
+    color: red;
+    font-size: 15px;
+}
+
+.card-color {
+    top: 23%;
+    left: 50%;
+    color: grey;
+    font-size: 17px;
+}
+
+.card-color-list {
+    color: grey;
+    font-size: 15px;
+}
+
+.card-header {
+    border: none;
+    left: 25%;
+    top: 5%;
+    background: none;
+    
+}
+
+.card-header-list {
+    font-size: 19px;
+}
+
+
+
+
+.card-img-list {
+    height: 100px;
+}
+
+
+
