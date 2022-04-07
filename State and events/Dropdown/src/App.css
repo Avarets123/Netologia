@@ -1,0 +1,61 @@
+body {
+  background: #f5f5f5;
+}
+
+.dropdown {
+  position: relative;
+  margin: 13rem auto auto 30rem;
+}
+
+
+.btn {
+  height: 4rem;
+  width: 20rem;
+}
+
+.setting-list {
+  margin-top: 1rem;
+  list-style: none;
+  background: white;
+  width: 20rem;
+  padding-bottom: 1rem;
+  padding-top: 1px;
+  padding-right: 1rem;
+}
+
+.setting-item {
+  display: block;
+  margin-top: 22px;
+  text-align: left;
+}
+
+.setting-item a {
+  text-decoration: none;
+  color: grey ;
+  font-weight: 700;
+
+}
+
+
+.setting-item::after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid silver;
+  padding: 9px;
+}
+
+
+.setting-item:last-child::after {
+  content: '';
+  border: none;
+}
+
+
+.d-none {
+  display: none;
+}
+
+
+.active {
+  color: blue !important;
+}
