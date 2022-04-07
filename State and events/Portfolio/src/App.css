@@ -1,0 +1,31 @@
+.tabs-section {
+  margin-top: 5rem;
+}
+
+
+
+.tabs-list {
+  list-style-type: none;
+
+}
+
+
+.tab-item {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+
+.wrapperProjectPhoto {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.projectPhoto {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+}
