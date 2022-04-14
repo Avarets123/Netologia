@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+  height: 100vh;
+  background: #34495e;
+  margin: 0;
+  color: rgb(52, 73, 94);
+  padding: 0;
+}
+
+
+
+
+.converter {
+
+  padding: 20% 0% 0% 40%;
+}
+
+.converter input {
+  display: block;
+  margin-bottom: 1rem;
+  width: 15rem;
+  height: 3rem;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 1px 1px  rgb(189, 135, 135);
+}
+
+
+.converter input:last-child {
+  background: rgb(36, 48, 105);
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+}
+
