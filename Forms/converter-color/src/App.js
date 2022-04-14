@@ -2,6 +2,14 @@ import React, { useState } from "react";
 
 function App() {
 
+  function hexToRgb(hex) {
+    let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : null;
+  }
 
   const [rgbColor, setRgbColor] = useState('');
 
@@ -12,11 +20,15 @@ function App() {
 
 
     if (value.length >= 7) {
-      if (value.indexOf('#', 0) > -1) {
-        
-        cont.style.backgroundColor = value;
-        setRgbColor(getComputedStyle(cont).backgroundColor);
-        console.log(getComputedStyle(cont).backgroundColor); 
+
+      let readRgb = hexToRgb(e.target.value);
+
+      if (value.indexOf('#', 0) > -1 && readRgb !== null ) {
+
+        readRgb = Object.values(readRgb);
+        cont.style.backgroundColor = value;        
+        setRgbColor(`rgb ${readRgb}`);  
+
       } else {
         cont.style.backgroundColor = 'red';
         setRgbColor('Ошибка!');
