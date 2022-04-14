@@ -8,33 +8,54 @@ const Workout = () => {
 
     const [getWork, setWork] = useState([])
 
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
         e.preventDefault();
 
-        if(e.target.data.value === '' || e.target.distance.value === '') {
+        if (e.target.data.value === '' || !e.target.distance.value) {
             return;
         }
 
         const hasWork = getWork.find(el => el.data === e.target.data.value)
         if (hasWork) {
 
-            return setWork(prev => {
+           await setWork(prev => {
 
-               let elemEditIdx = prev.findIndex(el => el.data === hasWork.data);
-               let edition = prev[elemEditIdx];
-               edition.distance = e.target.distance.value;
+                const idx = prev.findIndex(el => el.data === hasWork.data);
 
-               return [...prev.slice(0, elemEditIdx), edition, ...prev.slice(elemEditIdx + 1)]
+
+                let editElem = prev[idx];
+
+                
+                
+                let newElem = {
+                    data: editElem.data,
+                    distance: editElem.distance + +e.target.distance.value,
+                    id: editElem.id
+                }
+                
+
+                
+                const before = prev.slice(0, idx);
+                const after = prev.slice(idx + 1);
+
+                return [...before, newElem, ...after];
+
             });
+
+            form.reset();
             
 
+        } else {
+            const newWorkout = new WorkoutModel(e.target.data.value, +e.target.distance.value);
+
+            await setWork(prev => [newWorkout, ...prev]);
+
+            document.querySelector('form').reset();
+
+
+
+
         }
-
-
-        const newWorkout = new WorkoutModel(e.target.data.value, e.target.distance.value);
-
-        setWork(prev => [newWorkout, ...prev])
-
     }
 
     const onRemove = (id) => {
@@ -58,11 +79,8 @@ const Workout = () => {
 
         const editElem = getWork.find(elem => elem.id === id);
 
-
         form.data.value = editElem.data;
         form.distance.value = editElem.distance;
-
-
 
     }
 
@@ -73,11 +91,11 @@ const Workout = () => {
             <form onSubmit={(e) => onSubmit(e)}>
                 <div className='wrapper-input'>
                     <label htmlFor='data'> Дата (ДД.ММ.ГГ) </label>
-                    <input  id='data' type='date' name='data' />
+                    <input  id='data' type='text' name='data' />
                 </div>
                 <div className='wrapper-input'>
                     <label htmlFor='distance'> Пройдено км </label>
-                    <input  id='distance' type='text' name='distance'/>
+                    <input  id='distance' type='number' name='distance'/>
                 </div>
                 <button type='submit' className='submit'> OK</button>
             </form>
