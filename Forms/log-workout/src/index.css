@@ -1,0 +1,80 @@
+.container {
+  margin-left: 10%;
+}
+
+.wrapper-input {
+  margin-top: 5rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.wrapper-input input {
+  display: block;
+  height: 3rem;
+  width: 15rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+
+.wrapper-input label {
+  display: inline-block;
+  color: black;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.submit {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 3.2rem;
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 2rem;
+  width: 4rem;
+  cursor: pointer;
+}
+
+.table {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  width: 45rem;
+}
+
+.table span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.result-list {
+  min-height: 10rem;
+  width: 45rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.result-item {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-item span {
+  font-size: 20px;
+}
+
+.remove {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.remove:hover, .edit:hover {
+  cursor: pointer;
+}
