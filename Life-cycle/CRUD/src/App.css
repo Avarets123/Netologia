@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem;
+}
+
+
+.header {
+  margin-top: 1%;
+  margin-left: 11%;
+  font-size: 24px;
+
+}
+
+h2 {
+  display: inline-block;
+}
+
+.refresh {
+  width:  70px;
+  border: 1px solid black;
+  border-radius: 100%;
+  font-size: 30px;
+  padding: 7px;
+  color: rgb(11, 141, 11);
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.refresh:hover {
+  background: rgba(55, 25, 83, 0.363);
+}
+
+
+.del {
+  position: absolute;
+  text-align: center;
+  font-size: 36px;
+  top: -1.4rem;
+  right: -1.5rem;
+  width:40px;  
+  border: 3px solid red;
+  color: red;
+  font-weight: bold;
+  background: white;
+  border-radius: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.note {
+  position: relative;
+  display: inline-block;
+  margin-left: 4rem;
+  border: 2px solid black;
+  padding: 5px;
+  width: 20rem;
+  min-height: 8rem;
+  line-height: 35px;
+  text-align: center;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+
+.send {
+  display: block;
+  width: 60px;
+  border: 1px solid black;
+  font-size: 26px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 100%;
+  margin-top: 5rem;
+  margin-left: 80%;
+  cursor: pointer;
+}
+
+
+.new-note {
+  display: block;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.input-note {
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: none;
+  text-align: center;
+  font-size: 34px;
+  width: 99%;
+  height: 80px;  
+}
+
+
