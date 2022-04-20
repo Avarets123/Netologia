@@ -1,0 +1,35 @@
+.wrapper {
+  position: relative;
+  margin: 10% 0 0 30%;
+}
+
+label {
+  display: block;
+}
+
+.wrapper-clock {
+  display: inline-block;
+  border: 5px solid rebeccapurple;
+  padding: 1rem;
+}
+
+.cont-input {
+  display: inline-block;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  background: white;
+}
+
+.cont-clock {
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+}
+
+.del-clock {
+  margin-right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
