@@ -1,0 +1,29 @@
+.container {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6rem;
+}
+
+.card-header {
+  border-bottom: none;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  background: none;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.bg-primary {
+  color: white;
+}
