@@ -1,0 +1,29 @@
+.container {
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+
+
+.field {
+  height: 1.5rem;
+  width: 15rem;
+}
+
+.btn-save {
+  background: rgba(36, 106, 69, 0.264);
+  height: 2rem;
+}
+
+.wrapper-item {
+  font-size: 2rem;
+}
+
+.edit {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.del {
+  font-size: 1.4rem;
+}
