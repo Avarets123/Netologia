@@ -22,7 +22,7 @@ export default function Listing({data}) {
             <div className='item' key={listing_id} >
                 <div className='item-image'>
                     <a href={url}>
-                        <img src={MainImage.url_570xN} alt='product-img'/>
+                        <img src={ MainImage ? MainImage.url_570xN : null} alt='product-img'/>
                     </a>
                 </div>
                 <div className='items-detals'>
