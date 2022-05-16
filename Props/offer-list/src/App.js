@@ -1,4 +1,3 @@
-import './App.css';
 import dataBase from './data/data';
 
 import Listing from './Components/Listing';
