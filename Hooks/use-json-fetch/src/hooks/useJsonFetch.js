@@ -13,8 +13,8 @@ const useJsonFetch = (url) => {
 
             let res = await fetch(url);
 
-            if (!res.ok) {
-                res.json().then(setError);
+            if (!res.status > 299) {
+                setError(true)
             }
 
             res.json().then(setData)
