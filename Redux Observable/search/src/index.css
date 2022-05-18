@@ -1,0 +1,17 @@
+.container {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.search {
+  width: 25rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.item {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
